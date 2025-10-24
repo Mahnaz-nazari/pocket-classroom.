@@ -1,0 +1,109 @@
+/* ===== پایه رنگ‌ها ===== */
+body {
+  background-color: #0d0d0d; /* مشکی خیلی تیره */
+  color: #dcd0f5; /* بنفش روشن */
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== پس‌زمینه بنفش گرادیانت ===== */
+.bg-purple {
+  background: linear-gradient(100deg, #5700c2, #9b4ff0);
+}
+
+/* ===== دکمه‌ها ===== */
+.btn-purple {
+  background-color: #5700c2;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #9b4ff0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(155, 79, 240, 0.4);
+}
+
+/* ===== بخش‌های تب ===== */
+.tab-section {
+  display: block;
+  padding: 12px;
+}
+
+.tab-section.d-none {
+  display: none;
+}
+
+/* ===== کارت‌های فلش ===== */
+.flashcard {
+  perspective: 1000px;
+  width: 220px;
+  height: 130px;
+  margin: 16px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 130px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4b0082;
+  color: #fff;
+  transition: transform 0.7s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.flashcard:hover {
+  transform: rotateY(10deg);
+  box-shadow: 0 8px 16px rgba(155, 79, 240, 0.5);
+}
+
+.flashcard .back {
+  display: none;
+}
+
+/* ===== دکمه‌ها ===== */
+button:focus {
+  outline: none;
+}
+
+/* ===== Input / Textarea / Select ===== */
+input, textarea, select {
+  background-color: #1c1c1c;
+  color: #eee;
+  border: 1px solid #5700c2;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #9b4ff0;
+  box-shadow: 0 0 6px #9b4ff0;
+}
+
+/* ===== کارت‌های کپسول (Library) ===== */
+.capsule-card {
+  background-color: #1b1b1b;
+  border: 1px solid #5700c2;
+  border-radius: 10px;
+  padding: 14px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capsule-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(155, 79, 240, 0.4);
+}
+
+/* ===== فونت و رنگ برای تیترها ===== */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #c3a0f0;
+}
